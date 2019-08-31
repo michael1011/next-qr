@@ -1,0 +1,31 @@
+{
+  "name": "next-qr",
+  "version": "1.0.0",
+  "description": "A QR code generator written with Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael1011/next-qr.git"
+  },
+  "author": "michael1011",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michael1011/next-qr/issues"
+  },
+  "homepage": "https://github.com/michael1011/next-qr#readme",
+  "dependencies": {
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@types/next": "^8.0.6",
+    "@types/react": "^16.9.2",
+    "typescript": "^3.6.2"
+  }
+}
