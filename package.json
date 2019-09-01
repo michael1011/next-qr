@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "build:style-types": "node StyleTypesGenerator.js",
+    "start": "NODE_ENV=production next start",
+    "export": "next export"
   },
   "repository": {
     "type": "git",
@@ -19,13 +21,18 @@
   },
   "homepage": "https://github.com/michael1011/next-qr#readme",
   "dependencies": {
+    "@material-ui/core": "^4.4.0",
+    "@zeit/next-css": "^1.0.1",
     "next": "^9.0.5",
+    "qrcode.react": "^0.9.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "@types/next": "^8.0.6",
+    "@types/qrcode.react": "^0.8.2",
     "@types/react": "^16.9.2",
+    "typed-css-modules": "^0.6.0",
     "typescript": "^3.6.2"
   }
 }

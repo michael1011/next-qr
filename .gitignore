@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+out
+
+# Visual Studio configuration
+.vscode
+
+# Generated Types of the CSS stylesheets
+css/*.d.ts 
