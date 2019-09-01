@@ -3,10 +3,6 @@ import React, { FunctionComponent } from 'react';
 import QRCode from 'qrcode.react';
 import { Button } from '@material-ui/core';
 
-type Props = {
-  value: string;
-};
-
 const downloadQR = () => {
   const canvas = document.getElementsByTagName('canvas')[0];
 
@@ -27,6 +23,10 @@ const downloadQR = () => {
   } else {
     console.log('Could not find QR code element');
   }
+};
+
+type Props = {
+  value: string;
 };
 
 const DownloadableQRCode: FunctionComponent<Props> = ({ value }) => {

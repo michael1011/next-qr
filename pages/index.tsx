@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../css/styles.css';
 import React, { Component } from 'react';
 import TextInput from '../components/TextInput';
+import ThemeProvider from '../components/ThemeProvider';
 import DownloadableQRCode from '../components/DownloadableQRCode';
 
 type State = {
@@ -11,7 +12,7 @@ type State = {
 class Index extends Component<{}, State> {
   render() {
     return (
-      <div>
+      <ThemeProvider>
         <Head>
           <title>QR-Code generator</title>
         </Head>
@@ -29,7 +30,7 @@ class Index extends Component<{}, State> {
             }} />
           </div>
         </div>
-      </div>
+      </ThemeProvider>
     );
   }
 }
