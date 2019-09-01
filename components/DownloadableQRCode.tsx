@@ -1,27 +1,27 @@
-import styles from '../css/qrStyles.css';
-import React, { FunctionComponent } from 'react';
-import QRCode from 'qrcode.react';
-import { Button } from '@material-ui/core';
+import React, { FunctionComponent } from "react";
+import QRCode from "qrcode.react";
+import { Button } from "@material-ui/core";
+import styles from "../css/qrStyles.css";
 
 const downloadQR = () => {
-  const canvas = document.getElementsByTagName('canvas')[0];
+  const canvas = document.getElementsByTagName("canvas")[0];
 
   if (canvas) {
-    const pngUrl = (canvas as any)
+    const pngUrl = canvas
       .toDataURL("image/png")
-      .replace("image/png", "image/octet-stream")
-    
+      .replace("image/png", "image/octet-stream");
+
     const downloadLink = document.createElement("a");
     downloadLink.href = pngUrl;
-    downloadLink.download = 'qr.png'
-    
+    downloadLink.download = "qr.png";
+
     document.body.appendChild(downloadLink);
-    
+
     downloadLink.click();
-    
+
     document.body.removeChild(downloadLink);
   } else {
-    console.log('Could not find QR code element');
+    console.log("Could not find QR code element");
   }
 };
 
@@ -33,7 +33,14 @@ const DownloadableQRCode: FunctionComponent<Props> = ({ value }) => {
   return (
     <div className={styles.qrWrapper}>
       <QRCode value={value} size={250} />
-      <Button id={styles.qrButton} onClick={downloadQR} variant={'contained'} color={'default'}>Download QR</Button>
+      <Button
+        id={styles.qrButton}
+        onClick={downloadQR}
+        variant="contained"
+        color="default"
+      >
+        Download QR
+      </Button>
     </div>
   );
 };
