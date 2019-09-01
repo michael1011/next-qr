@@ -22,7 +22,7 @@ class Index extends Component<{}, State> {
         <div className={styles.wrapper}>
           <DownloadableQRCode value={this.state !== null ? this.state.qrValue : ''} />
 
-          <div className={styles.config}>
+          <div className={styles.input}>
             <TextInput onChange={(newText) => {
               this.setState({
                 qrValue: newText,

@@ -26,7 +26,7 @@ h2 {
   align-items: center; 
 }
 
-.config {
+.input {
   width: 100%;
   
   margin-left: 4vw;
@@ -38,4 +38,15 @@ h2 {
 
 #valueInput {
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .input {
+    margin-left: 0;
+    margin-bottom: 5vw;
+  }
 }
