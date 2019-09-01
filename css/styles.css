@@ -25,6 +25,16 @@ h2 {
   display: flex;
 }
 
+.config {
+  width: 100%;
+  
+  margin-left: 4vw;
+}
+
 #title {
   padding-bottom: 2vh;
+}
+
+#valueInput {
+  width: 100%;
 }
