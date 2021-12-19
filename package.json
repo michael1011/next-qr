@@ -4,7 +4,7 @@
   "description": "A QR code generator written with Next.js",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint components/* pages/*",
+    "lint": "eslint components pages",
     "dev": "next",
     "build": "next build",
     "build:style-types": "node StyleTypesGenerator.js",
@@ -22,28 +22,29 @@
   },
   "homepage": "https://github.com/michael1011/next-qr#readme",
   "dependencies": {
-    "@material-ui/core": "^4.4.0",
+    "@material-ui/core": "^4.12.3",
     "@zeit/next-css": "^1.0.1",
-    "next": "^9.3.2",
-    "qrcode.react": "^0.9.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "next": "^12.0.7",
+    "qrcode.react": "^1.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/next": "^8.0.6",
-    "@types/qrcode.react": "^0.8.2",
-    "@types/react": "^16.9.2",
-    "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "@typescript-eslint/parser": "^2.0.0",
-    "eslint": "^6.3.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "prettier": "^1.18.2",
-    "typed-css-modules": "^0.6.0",
-    "typescript": "^3.6.2"
+    "@next/eslint-plugin-next": "^12.0.7",
+    "@types/next": "^8.0.7",
+    "@types/qrcode.react": "^1.0.2",
+    "@types/react": "^17.0.37",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "prettier": "^2.5.1",
+    "typed-css-modules": "^0.7.0",
+    "typescript": "^4.5.4"
   }
 }

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { Component } from "react";
-import styles from "../css/styles.css";
+import styles from "./Index.module.css";
 import TextInput from "../components/TextInput";
 import ThemeProvider from "../components/ThemeProvider";
 import DownloadableQRCode from "../components/DownloadableQRCode";
@@ -9,12 +9,12 @@ type State = {
   qrValue: string;
 };
 
-class Index extends Component<{}, State> {
-  constructor(props: {}) {
+class Index extends Component<Record<string, unknown>, State> {
+  constructor(props: Record<string, unknown>) {
     super(props);
 
     this.state = {
-      qrValue: ""
+      qrValue: "",
     };
   }
 
@@ -34,9 +34,9 @@ class Index extends Component<{}, State> {
 
           <div className={styles.input}>
             <TextInput
-              onChange={newText => {
+              onChange={(newText) => {
                 this.setState({
-                  qrValue: newText
+                  qrValue: newText,
                 });
               }}
             />

@@ -4,11 +4,10 @@
   "extends": [
     "airbnb",
     "prettier",
-    "prettier/react",
     "plugin:react/recommended",
     "plugin:import/typescript",
-    "prettier/@typescript-eslint",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -32,11 +31,14 @@
   },
   "rules": {
     "no-console": "off",
+    "func-names": "off",
     "react/prop-types": 0,
+    "import/extensions": "off",
     "prettier/prettier": "error",
+    "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".ts", "tsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".ts", "tsx"] }]
   },
   "overrides": []
 }

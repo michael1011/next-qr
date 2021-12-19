@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import QRCode from "qrcode.react";
 import { Button } from "@material-ui/core";
-import styles from "../css/qrStyles.css";
+import styles from "./DownloadableQRCode.module.css";
 
 const downloadQR = () => {
   const canvas = document.getElementsByTagName("canvas")[0];
@@ -29,7 +29,7 @@ type Props = {
   value: string;
 };
 
-const DownloadableQRCode: FunctionComponent<Props> = ({ value }) => {
+const DownloadableQRCode: FunctionComponent<Props> = function ({ value }) {
   return (
     <div className={styles.qrWrapper}>
       <QRCode value={value} size={250} />

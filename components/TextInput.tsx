@@ -1,12 +1,12 @@
 import { TextField } from "@material-ui/core";
 import React, { FunctionComponent } from "react";
-import styles from "../css/styles.css";
+import styles from "./TextInput.module.css";
 
 type Props = {
   onChange: (newInput: string) => void;
 };
 
-const TextInput: FunctionComponent<Props> = ({ onChange }) => {
+const TextInput: FunctionComponent<Props> = function ({ onChange }) {
   return (
     <div id={styles.valueInput}>
       <TextField
@@ -14,7 +14,7 @@ const TextInput: FunctionComponent<Props> = ({ onChange }) => {
         fullWidth
         autoFocus
         multiline
-        onChange={event => {
+        onChange={(event) => {
           onChange(event.target.value);
         }}
       />

@@ -1,15 +1,15 @@
 import { grey } from "@material-ui/core/colors";
 import React, { FunctionComponent } from "react";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: grey,
-    secondary: grey
-  }
+    secondary: grey,
+  },
 });
 
-const ThemeProvider: FunctionComponent = ({ children }) => {
+const ThemeProvider: FunctionComponent = function ({ children }) {
   return <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>;
 };
 

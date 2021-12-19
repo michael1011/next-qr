@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  align-items: center; 
+}
+
+.input {
+  width: 100%;
+  
+  margin-left: 4vw;
+}
+
+#title {
+  padding-bottom: 2vh;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .input {
+    margin-left: 0;
+    margin-bottom: 5vw;
+  }
+}
